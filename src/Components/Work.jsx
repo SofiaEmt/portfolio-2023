@@ -1,10 +1,28 @@
-import email from '../assets/email.svg' 
+import email from '../assets/email.svg';
+import { gsap } from "gsap";
+import { useLayoutEffect, useRef } from 'react';
 
 const Work = () => {
+    const Cards = useRef(); 
+
+    useLayoutEffect(() => {
+
+
+        let ctx = gsap.context(() => {
+            gsap.from(".one", {duration: 1.5, opacity: 0, ease:"expo.out",  x:-30, stagger: .05});   
+            gsap.from(".two", {duration: 1.5, opacity: 0, ease:"expo.out",  x:30, stagger: .05})    
+
+/*             gsap.from(".card", {duration: 2.5, opacity: 0, ease:"expo.out",  x:-50, stagger: .05});  */
+        }, Cards);
+
+        return () => ctx.revert();
+        
+    }, []);
+
     return (
         <>
-        <section className="wrapper">
-            <div className="card">
+        <section ref={Cards} className="wrapper">
+            <div className="card one">
                 <h3>Client work at Hyper Island</h3>
                 <ul>
                     <li>Figma prototyping and development ideation</li>
@@ -12,7 +30,7 @@ const Work = () => {
                     <li>Git and Bitbucket for development</li>
                 </ul>
             </div>
-            <div className="card">
+            <div className="card one">
                 <h3>Internship KAN Stockholm</h3>
                 <ul>
                     <li>Client communication</li>
@@ -20,7 +38,7 @@ const Work = () => {
                     <li><span>Hubspot CMS</span> module based website development</li>
                 </ul>
             </div>
-            <div className="card blue">
+            <div className="card blue two">
             <h3>KAN Stockholm</h3>
                 <ul>
                     <li>Hubspot CMS full website development</li>
@@ -29,7 +47,7 @@ const Work = () => {
                     <li>Use of GPT-based AI for more cost-efficient problem solving</li>
                 </ul>
             </div>
-            <div className="card">
+            <div className="card two">
                 <h3>What's next?</h3>
                 <figure>
                     <img src={email} alt="Email me!"/>

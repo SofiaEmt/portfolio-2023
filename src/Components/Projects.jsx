@@ -2,7 +2,6 @@ import Popup from 'reactjs-popup';
 import sudokuMobile from '../assets/sudoku3.png'
 import sudokuPreview from '../assets/sudokumovie.mp4';
 import sudokuTablet from '../assets/tablet_sudoku.png'
-import { useEffect, useRef } from 'react';
 import Sudoku from './Projects/Sudoku';
 import Hills from './Projects/Hills';
 import Chuck from './Projects/Chuck';
@@ -19,30 +18,15 @@ import hubspotBg from '../assets/hubspot_1.png';
 
 import { gsap } from "gsap";
 
-import { useLayoutEffect } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 
 const Projects = () => {
 
-
-/*     const videoEl = useRef(null);
-    const attemptPlay = () => {
-        videoEl &&
-            videoEl.current &&
-            videoEl.current.play().catch(error => {
-                console.error("Error attempting to play", error);
-            });
-    };
-
-    useEffect(() => {
-        attemptPlay();
-    }, []); */
     const projectCards = useRef();
-    const card = useRef();
 
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
-            gsap.to(card.current, {duration: 1, ease: "bounce", y:"random(-100, 100)"});
-            
+            gsap.from(".card_desc", {duration: .5, zoom:1.5, ease: "power1.out", opacity:0, stagger:0.05});
         }, projectCards);
 
         return () => ctx.revert();
@@ -53,7 +37,7 @@ const Projects = () => {
 
     return(
         <section ref={projectCards} className="wrapper projects">
-            <div ref={card} className="card gradient">
+            <div className="card gradient">
                 <figure><img src={sudokuBg} /></figure>
                 <Sudoku />
                 <article className="card_desc">
@@ -66,7 +50,7 @@ const Projects = () => {
                 </article>
             </div>
 
-            <div ref={card} className="card gradient">
+            <div className="card gradient">
                 <div className="overlay"></div>
                 <figure><img src={hillsBg} /></figure>
                 <Hills />
@@ -81,7 +65,7 @@ const Projects = () => {
                     </ul>
                 </article>
             </div>
-            <div ref={card} className="card gradient">
+            <div className="card gradient">
                 <div className="overlay"></div>
                 <figure><img className="full" src={workoutBg} /></figure>
                 <Workout />
@@ -94,7 +78,7 @@ const Projects = () => {
                     </ul>
                 </article>
             </div>
-            <div ref={card} className="card gradient">
+            <div className="card gradient">
                 <div className="overlay"></div>
                 <figure><img src={chuckBg} /></figure>
                 <Chuck />
@@ -106,7 +90,7 @@ const Projects = () => {
                     </ul>
                 </article>
             </div>
-            <div ref={card} className="card gradient">
+            <div className="card gradient">
                 <div className="overlay"></div>
                 <figure><img className="full" src={hubspotBg} /></figure>
                 <Hubspot />
@@ -121,7 +105,7 @@ const Projects = () => {
                     </ul>
                 </article>
             </div>
-            <div ref={card} className="card gradient">
+            <div className="card gradient">
                 <div className="overlay"></div>
                 <figure><img className="full" src={boyeBg} /></figure>
                 <Boye />

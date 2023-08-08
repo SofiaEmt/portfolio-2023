@@ -79,21 +79,23 @@
 }
 
 .facts p.van {
+
     position: absolute;
-    top: 8rem;
-    left: -5rem;
+    top: 6rem;
+    left: -10rem;
 }
 
 .facts p.sauna {
     position: absolute;
-    top: 13rem;
-    left: -3rem;
+    top: 10rem;
+    left: -5rem;
+
 }
 
 .facts p.fun {
     position: absolute;
-    top: 6rem;
-    left: -10rem;
+    top: 12.5rem;
+    left: -3rem;
 }
 
 .facts span {
