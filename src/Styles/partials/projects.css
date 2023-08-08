@@ -1,8 +1,9 @@
 .wrapper.projects {
     display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));	    
+     grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));	    
+/*     grid-template-columns: repeat(3, minmax(0, 1fr));  */
     gap: 25px;
-    height: 100%;
+/*     height: 100%; */
 }
 
 .wrapper.projects button {
@@ -23,7 +24,6 @@
 }
 
 .overlay {
-/*     background-color: rgba(17, 17, 17, 0.3); */
     transition: all .2s ease-in-out;
     position: absolute;
     height: 100%;
@@ -72,20 +72,6 @@ ul.tech li {
     margin-bottom: 0;
     padding-bottom: .2rem;
 } 
-
-/* ul.tech li:last-child {
-    border-radius: 0px 0px 12px;
-}
- */
-
-.card.hub {
-    background-color: black;
-}
-
-.card.boye {
-    background-color: black;
-}
-
 
 .wrapper.projects figure {
     align-items: center;
@@ -143,6 +129,6 @@ ul.tech li {
     text-shadow: 0 4px 4px rgba(0,0,0,.25);
 }
 
-.wrapper.projects .card.gradient:hover ul.tech li {
+.wrapper.projects .card.gradient:hover ul.tech li  {
     font-size: 14px;
 }
