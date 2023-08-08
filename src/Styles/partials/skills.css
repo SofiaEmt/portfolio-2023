@@ -1,0 +1,38 @@
+.skills_wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+.skills ul {
+    margin-block: 0px;
+    padding-inline: 0px;
+    list-style-type: none;
+    
+    text-transform: uppercase;
+    color: var(--red);
+    font-size: 2.25rem;
+    font-weight: 100;
+    letter-spacing: 0.03375rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills li:not(:last-child) {
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 1090px) {
+    .skills {
+        padding-inline: 3rem;
+    }
+
+    .skills ul {
+        gap: 1rem;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+ }

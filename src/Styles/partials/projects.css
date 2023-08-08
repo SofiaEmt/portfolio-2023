@@ -1,0 +1,148 @@
+.wrapper.projects {
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));	    
+    gap: 25px;
+    height: 100%;
+}
+
+.wrapper.projects button {
+    background-color: transparent;
+}
+
+.projects .card {
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    background-color: var(--dark);
+
+    transition: all .25s ease-in-out;
+}
+
+.projects .card:hover {
+    cursor: pointer;
+}
+
+.overlay {
+/*     background-color: rgba(17, 17, 17, 0.3); */
+    transition: all .2s ease-in-out;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+ul.tech {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+h6 {
+    width: fit-content;
+    z-index: 5;
+    position: absolute;
+
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 0.045rem;
+    text-transform: uppercase;
+    color: var(--yellow);
+    margin: 0;
+
+    bottom: 1rem;
+    transition: all .25s ease-in-out;
+}
+
+ul.tech li {
+    transition: all .25s ease-in-out;
+    font-size: 12px;
+    color: var(--yellow);
+    width: fit-content;
+    font-weight: 500;
+}
+
+ ul.tech li:not(:last-child) {
+    margin-bottom: 0;
+    padding-bottom: .2rem;
+} 
+
+/* ul.tech li:last-child {
+    border-radius: 0px 0px 12px;
+}
+ */
+
+.card.hub {
+    background-color: black;
+}
+
+.card.boye {
+    background-color: black;
+}
+
+
+.wrapper.projects figure {
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.wrapper.projects figure img {
+    height: 105%;
+    width: 110%;
+    z-index: -1;
+    object-fit: cover;
+
+    transition: all .3s ease-in-out;
+}
+
+.wrapper.projects figure img.full {
+    width: 100%;
+}
+
+.wrapper.projects .card .card_desc {
+/*     align-items: flex-start;
+    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    left: 5%;
+    position: absolute;
+    transition: all .4s;
+    width: 100%; */
+
+    padding: 2rem;
+}
+
+.wrapper.projects .card {
+    padding: 0;
+}
+
+.overlay {
+    background: linear-gradient(0deg,rgba(10,8,18,.8) 25%,hsla(0,0%,89%,.02) 60%);
+    background: linear-gradient(0deg,rgba(10,8,18,.8) 18%,hsla(0,0%,89%,.02) 100%);
+}
+
+.wrapper.projects .card.gradient:hover figure img {
+    transform: scale(1.1);
+}
+
+.wrapper.projects .card.gradient:hover ul.tech {
+    right: 1.5rem;
+}
+
+.wrapper.projects .card.gradient:hover .card_desc h6 {
+    font-size: 1.5em;
+    text-shadow: 0 4px 4px rgba(0,0,0,.25);
+}
+
+.wrapper.projects .card.gradient:hover ul.tech li {
+    font-size: 14px;
+}

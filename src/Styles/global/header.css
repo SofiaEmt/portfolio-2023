@@ -1,0 +1,261 @@
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    width: fit-content;
+    margin-bottom: 3rem;
+}
+
+.img_container {
+    width: 33rem;
+    position: relative;
+}
+
+.img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.desc {
+    width: 45%;  
+    position: absolute;
+    bottom: -4.5rem;
+    left: 8rem;
+    background-color: transparent;
+}
+
+nav {
+    max-width: 870px;
+    width: 100%;
+    margin-bottom: 70px;
+    margin-top: 60px;
+}
+
+nav ul {
+    margin-block: 0px;
+    padding-inline: 0px;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(0.875rem, 0.466rem + 2.05vw, 2rem);
+    font-weight: bold;
+
+    letter-spacing: 0.06rem;
+}
+
+.text_hover {
+    position: relative;
+    display: inline-block;
+}
+
+.text_hover:hover .textwrapper_b,
+.text_hover:hover .textwrapper_g,
+.text_hover:hover .textwrapper_r,
+.text_hover:hover .textwrapper_y {
+    width: 100%;
+}
+
+.textwrapper_b {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    display: inline-block;
+    white-space: pre;
+    color: var(--blue);
+    transition: width .4s;
+    border-bottom: 3px solid;
+}
+
+.textwrapper_g {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    display: inline-block;
+    white-space: pre;
+    color: var(--green);
+    transition: width .4s;
+    border-bottom: 3px solid;
+}
+
+.textwrapper_r {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    display: inline-block;
+    white-space: pre;
+    color: var(--red);
+    transition: width .4s;
+    border-bottom: 3px solid;
+}
+
+.textwrapper_y {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    display: inline-block;
+    white-space: pre;
+    color: var(--yellow);
+    transition: width .4s;
+    border-bottom: 3px solid;
+}
+
+nav li:nth-child(1).active {
+    color: var(--blue);
+    border-bottom: 3px solid;
+}
+
+nav li:nth-child(2).active {
+    color: var(--green);
+    border-bottom: 3px solid;
+} 
+
+nav li:nth-child(3).active {
+    color: var(--red);
+    position: relative;
+    border-bottom: 3px solid;
+}
+
+nav li:nth-child(3).active::before {
+    content: "current";
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    animation: showPseudo .4s forwards;
+    top: -1rem;
+    left: -60%;
+    font-size: clamp(0.9rem, 0.791rem + 0.55vw, 1.2rem);
+    font-weight: 400;
+}
+@keyframes showPseudo {
+    100% {
+        width: 100%;
+        left: 0;
+        overflow: visible;
+    }
+ }
+
+
+nav li:nth-child(4).active {
+    color: var(--yellow);
+    border-bottom: 3px solid;
+}
+
+.cutlink {
+    position: relative;
+    white-space: nowrap; 
+
+
+}
+
+.cutlink-inner {
+    clip-path: polygon(0 -20%, 100% -20%, 100% 51%, 0 51%);
+    -webkit-clip-path: polygon(0 -20%, 100% -20%, 100% 51%, 0 51%);
+    display: block;
+  }
+
+  .cutlink:before {
+    content: attr(data-content);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 120%, 100% 120%, 100% 50%, 0 50%);
+    -webkit-clip-path: polygon(0 120%, 100% 120%, 100% 50%, 0 50%);
+  }
+
+  .cutlink-inner, .cutlink:before {
+    transition: transform .2s var(--easeOutBack);
+  }
+
+  .cutlink:hover .cutlink-inner, 
+  .cutlink:hover .cutlink:before{
+      transition: transform 1s var(--easeOutCirc);
+  }
+
+  .cutlink:hover .cutlink:before {
+    transform: translate(3px, 1px);
+  }
+
+  .cutlink:hover .cutlink-inner {
+    transform: translate(-3px, -1px);
+  }
+
+@media screen and (max-width: 1090px) {
+    nav ul {
+        padding-inline: 2rem;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        margin: 50px 0px;
+    }
+}
+
+
+/******* Usernav ******/
+
+.userNav {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.userNav ul {
+    list-style-type: none;
+    padding-inline: 0px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 2.5rem 2.5rem 0rem 0rem;
+}
+
+.userNav li {
+    font-size: 2.5rem;
+    transition: all .25s ease-in-out;
+    position: relative;
+}
+
+.userNav li:hover,
+.userNav li:hover a {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: var(--purple);
+}
+
+.userNav .hover {
+    display: none;
+}
+
+
+.userNav .email .hoverText {
+    color: var(--light);
+    font-size: 10px;
+    right: -65%;
+    margin-left: -50px;
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    text-align: start;
+    top: 80%;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.userNav .email:hover .hoverText {
+    visibility: visible;
+}
+
+.userNav li a {
+    color: var(--light);
+}

@@ -1,0 +1,227 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.about .me {
+    display: flex;
+}
+
+.about .img_field {
+    width: 168px;
+    height: 165px;
+
+    border-radius: var(--radius);
+    overflow: hidden;
+
+    box-shadow: var(--shadow-elevation-medium);
+}
+
+.about .img_field img {
+    width: 100%;
+    min-height: 165px;
+    object-fit: cover;
+}
+
+.about p {
+    margin: 0 0 .5rem 0;
+}
+
+.about .description {
+    width: 50%;
+    margin-left: 3rem;
+    font-size: 16px;
+    letter-spacing: 0.03rem;
+}
+
+.about .description button {
+    display: none;
+}
+
+.about p span {
+    border-bottom: 3px solid var(--green);
+}
+
+.about .download {
+    position: relative;
+}
+.about .download svg {
+    position: absolute;
+    left: .5rem;
+    bottom: 4.5rem;
+}
+
+.about .download button {
+    position: absolute;
+    bottom: 0;
+    left: 4rem;
+    width: max-content;
+}
+
+.facts {
+    position: relative;
+    width: 15rem; 
+    font-size: 14px;
+    letter-spacing: 0.03rem;
+}
+
+.facts_title {
+    background-image: url('../../assets/fun.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 5rem;
+    width: 10rem;
+
+    position: absolute;
+    left: -12rem;
+}
+
+.facts p.van {
+    position: absolute;
+    top: 8rem;
+    left: -5rem;
+}
+
+.facts p.sauna {
+    position: absolute;
+    top: 13rem;
+    left: -3rem;
+}
+
+.facts p.fun {
+    position: absolute;
+    top: 6rem;
+    left: -10rem;
+}
+
+.facts span {
+    color: var(--green);
+    border: none !important;
+}
+
+.not_for_full {
+    display: contents;
+    position: relative;
+}
+
+.svg-not_for_full {
+    display: none;
+}
+
+@media screen and (max-width: 1090px) {
+    .about {
+        padding-inline: 3rem;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .about .download button {
+        left: 0;
+    }
+
+    .facts {
+        display: flex;
+        gap: .5rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .facts_title, p.van, p.sauna, p.fun {
+        position: initial !important;
+    }
+
+    p.van, p.sauna, p.fun {
+        flex: 1;
+    }
+
+    .facts_title {
+        margin-right: 2.5rem;
+        width: 168px;
+        height: 6rem;
+    }
+}
+
+@media screen and (max-width: 865px) { 
+    .about {
+        gap: 2rem;
+    }
+
+    .me {
+        display: contents !important;
+    }
+
+    .description {
+        flex: 1;
+    }
+
+    .description button {
+        display: block !important;
+        margin-top: 1.5rem;
+    }
+
+    .not_for_full {
+        display: flex;
+    }
+
+    .about .download svg {
+        display: none;
+    }
+
+    .download button {
+        display: none;
+        bottom: -6rem;
+        left: 0rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+        gap: 3rem;
+    }
+
+    .not_for_full {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .not_for_full .img_field {
+        width: 200px;
+        height: 190px;
+    }
+
+    .svg-not_for_full {
+        display: block;
+        position: absolute;
+        left: 10rem;
+        top: 3rem;
+        transform: rotate(18deg);
+    }
+
+    .not_for_full button {
+        margin-top: 2rem;
+    }
+
+    .not_for_full .description {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .svg-not_for_full {
+        bottom: -4rem;
+    }
+} 
+
+@media screen and (max-width: 500px) {
+    .about {
+        gap: 2rem;
+    }
+
+    .facts {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

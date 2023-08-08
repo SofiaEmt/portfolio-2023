@@ -1,0 +1,44 @@
+:root {
+    --dark: #232323;
+    --light: #ffffff;
+    --grey: #4B4B4B;
+    --blue: #0066FF;
+    --blue_gradient: linear-gradient(180deg, #06F 0%, #13438C 100%);
+    --green: #00FF0A;
+    --green_gradient: linear-gradient(180deg, #00FF0A 0%, #24AA29 100%);
+    --red: #F00000;
+    --purple: #BD00FF;
+    --yellow: #FFF500;
+
+    --radius: 12px;
+
+
+    font-family: "PP Neue Montreal";
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 14px;
+
+    --shadow-color: 0deg 0% 4%;
+    --shadow-elevation-low:
+      0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.39),
+      0.4px 0.8px 1px -1.3px hsl(var(--shadow-color) / 0.37),
+      1px 2px 2.4px -2.7px hsl(var(--shadow-color) / 0.35);
+    --shadow-elevation-medium:
+      0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.41),
+      0.8px 1.6px 2px -0.9px hsl(var(--shadow-color) / 0.39),
+      2.1px 4.1px 5px -1.8px hsl(var(--shadow-color) / 0.38),
+      5.1px 10.2px 12.5px -2.7px hsl(var(--shadow-color) / 0.36);
+    --shadow-elevation-high:
+      0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.38),
+      1.4px 2.8px 3.4px -0.4px hsl(var(--shadow-color) / 0.37),
+      2.7px 5.3px 6.5px -0.8px hsl(var(--shadow-color) / 0.36),
+      4.5px 8.9px 10.9px -1.2px hsl(var(--shadow-color) / 0.36),
+      7.2px 14.5px 17.7px -1.5px hsl(var(--shadow-color) / 0.35),
+      11.4px 22.9px 28px -1.9px hsl(var(--shadow-color) / 0.34),
+      17.6px 35.1px 43px -2.3px hsl(var(--shadow-color) / 0.34),
+      26px 52px 63.7px -2.7px hsl(var(--shadow-color) / 0.33);
+
+    --easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}

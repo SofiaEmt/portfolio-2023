@@ -1,0 +1,340 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .intro {
+  text-align: center;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  flex-direction: column;
+} */
+
+/* .img_container {
+  width: 33rem;
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  object-fit: contain;
+
+}
+ */
+.sun.img {
+  animation-name: heartbeat; 
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  animation-direction: alternate;
+}
+
+/* .intro_cont {
+  animation-name: heartbeat; 
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  animation-direction: alternate;
+} */
+
+
+
+.intro_cont {
+  position: absolute;
+  top: 5rem;
+  left: -10.5rem;
+  text-align: end;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.intro--first {
+  margin-right: 1rem;
+}
+
+.intro--second {
+  margin-right: 2rem;
+}
+
+.intro--third {
+  margin-right: 3rem;
+}
+
+.intro--fourth {
+  margin-right: 3.5rem;
+}
+
+.intro--fifth {
+  margin-right: 4rem;
+}
+
+.intro--sixth {
+  margin-right: 4rem;
+}
+
+.nav {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  margin-right: -4.5rem;
+}
+
+.nav li:first-child {
+  margin-left: -3rem;
+}
+
+.nav a {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 1.25rem;
+  transition: all .25 ease-in-out;
+}
+
+.nav a:hover {
+  color: var(--black);
+}
+
+/* a {
+  position: relative;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 7px;
+    background-color: var(--black);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .2s ease-in-out;
+  } */
+/* 
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+} */
+
+.yarn_container {
+  position: absolute;
+  width: 20rem;
+}
+
+.arrow_container {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+/*********
+********** Main.jsx */
+
+/* .content {
+  max-width: var(--content-width);
+
+  margin-top: 4rem;
+
+  display: grid;
+  gap: 150px;
+} */
+
+/*********
+********** Hero.jsx */
+
+.hero_comp {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  max-width: 1024px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_comp .img_field {
+  margin: 0;
+  width: 300px;
+}
+
+.hero_comp .img_field img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.hero_comp .text_field {
+  font-weight: 400;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero_comp p:last-of-type {
+  margin-bottom: 3rem;
+}
+
+/* p {
+  margin-top: 0;
+  margin-bottom: .2rem;
+} */
+
+
+/*********
+********** Skills.jsx */
+
+.blue_wrapper {
+  background: var(--blue-80);
+  color: var(--white);
+  width: 110vw;
+  box-shadow: var(--shadow-elevation-medium);
+
+
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -55vw;
+  margin-right: -55vw;
+
+  transform: skew(10deg, 3deg);
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+
+
+}
+
+.blue_blob {
+  position: absolute;
+  top: 15%;
+  left: -1rem;
+  transform: skew(-10deg, -3deg);
+}
+
+.blue_blob--2 {
+  position: absolute;
+  top: -5rem;
+  right: 5rem;
+  transform: skew(-10deg, -3deg) rotate(-120deg);
+
+  z-index: -1;
+}
+
+.skills {
+/*   position: absolute; */
+/*   display: flex;
+  justify-content: flex-start;
+  transform: skew(-10deg, -3deg);
+
+  max-width: var(--content-width);
+  margin-bottom: 1rem; */
+}
+
+
+.skills ul {
+  list-style-type: none;
+  font-weight: 500;
+  padding-inline-start: 2rem;
+  width: 80%;
+}
+
+.skills h2 {
+  margin: 1.5rem 1rem 0rem 0rem;
+}
+
+.skills ul li {
+  margin-bottom: 1rem;
+}
+
+ul.first_row {
+  margin-top: 3rem;
+}
+
+ul.second_row {
+  margin-top: 4rem;
+  width: 60%;
+}
+
+ul.third_row {
+  margin-top: 5rem;
+}
+
+ul.fourth_row {
+  margin-top: 6rem;
+}
+
+.skills ul span {
+  font-weight: 300;
+}
+
+
+
+
+
+/*********
+********** Experience.jsx */
+
+.experience h2 {
+  font-size: clamp(1.75rem, 0.205rem + 7.73vw, 6rem);
+  margin: 0;
+}
+
+
+
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( 1 );
+  }
+  20%
+  {
+    transform: scale( .85 );
+  }
+  40%
+  {
+    transform: scale( 1 );
+  }
+  60%
+  {
+    transform: scale( .85 );
+  }
+  80%
+  {
+    transform: scale( 1 );
+  }
+  100%
+  {
+    transform: scale( .85 );
+  }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* .card {
+  padding: 2em;
+} */
+
+.read-the-docs {
+  color: #888;
+}
