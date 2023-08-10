@@ -260,3 +260,229 @@ nav li:nth-child(4).active {
 .userNav li a {
     color: var(--light);
 }
+
+.mobileNav, .mobileNav_btn {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .userNav  {
+        display: none;
+    }
+
+    .mobileNav_btn {
+        display: block;
+
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 1rem;
+        z-index: 10;
+    }
+
+    .mobileNav_btn img {
+        width: 3rem;
+    }
+}
+
+/************************/
+
+
+@media screen and (max-width: 500px) {
+    .bg_one, .bg_two {
+        display: none;
+    }
+
+    .head .img_container {
+        width: 26rem;
+    }
+
+    .head .desc {
+        width: 55%;
+        bottom: -5.5rem;
+        left: 5rem;
+    }
+
+    nav {
+        margin: 60px 0px 50px;
+    }
+
+    nav ul {
+        justify-content: space-between;
+        font-size: 1.25rem;
+    }
+
+    .wrapper {
+        padding-inline: 2rem !important;
+    }
+
+    .content .about {
+        padding-inline: 2rem;
+    }
+
+    .skills ul {
+        font-size: 1.5rem !important;
+        row-gap: 0rem !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .head .img_container {
+        width: 24rem;
+    }
+
+    .wrapper {
+        padding-inline: 1.5rem !important;
+    }
+
+    .content .about {
+        padding-inline: 1.5rem;
+    }
+
+    .head .desc {
+        bottom: -7rem;
+        left: 4.7rem;
+    }
+    
+    nav {
+        margin: 80px 0px 50px;
+    }
+
+    nav ul {
+        justify-content: start;
+        font-size: 2rem;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        flex-wrap: wrap;
+        margin: 1rem 1.5rem;
+        border-left: 3px solid;
+        border-right: 3px solid;
+    }
+
+    nav ul:has(li:nth-child(1).active) {
+        border-color: var(--blue);
+    }
+
+    nav ul:has(li:nth-child(2).active) {
+        border-color: var(--green);
+    }
+
+    nav ul:has(li:nth-child(3).active) {
+        border-color: var(--red);
+    }
+
+    nav ul:has(li:nth-child(4).active) {
+        border-color: var(--yellow);
+    }
+}
+
+
+
+.mobileNav.active {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+    top: 0rem;
+
+/*     background-color: var(--dark_purple); */
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 700 700" width="700" height="700"><defs><linearGradient gradientTransform="rotate(150, 0.5, 0.5)" x1="50%" y1="0%" x2="50%" y2="100%" id="ffflux-gradient"><stop stop-color="%23232323" stop-opacity="1" offset="0%"></stop><stop stop-color="%23000000" stop-opacity="1" offset="100%"></stop></linearGradient><filter id="ffflux-filter" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.005 0.003" numOctaves="2" seed="2" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="turbulence"></feTurbulence><feGaussianBlur stdDeviation="20 0" x="0%" y="0%" width="100%" height="100%" in="turbulence" edgeMode="duplicate" result="blur"></feGaussianBlur><feBlend mode="overlay" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" in2="blur" result="blend"></feBlend></filter></defs><rect width="700" height="700" fill="url(%23ffflux-gradient)" filter="url(%23ffflux-filter)"></rect></svg>');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mobileNav.active ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin-block: 0px;
+    padding-inline: 0px;
+    list-style-type: none;
+
+    font-size: 4rem;
+    color: var(--purple);
+    color: var(--light);
+
+}
+
+.mobileNav_btn {
+    width: 25px;
+    height: 16px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+    align-self: end;
+    margin: -2rem 1.5rem 0rem 0rem;
+}
+
+.mobileNav_btn span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--light);
+    border-radius: 0px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.mobileNav_btn span:nth-child(1) {
+    top: 0px;
+  }
+  
+  .mobileNav_btn span:nth-child(2),#nav-icon3 span:nth-child(3) {
+    top: 8px;
+  }
+  
+  .mobileNav_btn span:nth-child(4) {
+    top: 16px;
+  }
+  
+  .mobileNav_btn.open span:nth-child(1) {
+    top: 20px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  .mobileNav_btn.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .mobileNav_btn.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  .mobileNav_btn.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }

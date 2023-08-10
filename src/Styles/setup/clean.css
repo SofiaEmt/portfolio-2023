@@ -9,3 +9,12 @@ a {
     text-decoration: none;
     color: currentColor;
 }
+
+button.mobileNav_btn {
+    background: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none;
+    transition: none;
+
+}
