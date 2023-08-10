@@ -9,17 +9,17 @@ import Workout from './Projects/Workout';
 import Boye from './Projects/Boye';
 import Hubspot from './Projects/Hubspot';
 
-import sudokuBg from '../assets/sudoku1.png';
+import sudokuBg from '../assets/sudoku_mindre.png';
 import workoutBg from '../assets/workout_1.jpg';
-import chuckBg from '../assets/chuck_1.png';
-import hillsBg from '../assets/hills.jpeg';
-import boyeBg from '../assets/boye_1.png';
-import hubspotBg from '../assets/hubspot_1.png';
+import chuckBg from '../assets/chuck_mindre.png';
+import hillsBg from '../assets/hills.jpg';
+/* import boyeBg from '../assets/boye_1.jpg'; */
+import boyeBg from '../assets/noah_test_boye.png';
+import hubspotBg from '../assets/hubspot_mindre.png';
 
 import { gsap } from "gsap";
 
 import { useLayoutEffect, useRef } from 'react';
-import { useEffect } from 'react';
 
 const Projects = () => {
 
@@ -27,7 +27,7 @@ const Projects = () => {
 
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
-            gsap.from(".card", {duration: .5, zoom:1.5, ease: "power1.out", opacity:0, immediateRender: false});
+            gsap.from(".card", {duration:.5, zoom:1.3, ease: "power1.out", opacity:0});
         });
 
         return () => ctx.revert();

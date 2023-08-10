@@ -1,7 +1,7 @@
 .wrapper.projects {
     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));	    
-/*     grid-template-columns: repeat(3, minmax(0, 1fr));  */
+    /*  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));	     */
+    grid-template-columns: repeat(3, minmax(0, 1fr)); 
     gap: 25px;
 /*     height: 100%; */
 }
@@ -44,7 +44,7 @@ ul.tech {
 
 h6 {
     width: fit-content;
-    z-index: 5;
+    z-index: 4;
     position: absolute;
 
     font-size: 1.5rem;
@@ -102,7 +102,7 @@ ul.tech li {
 }
 
 h6, ul.tech li, /* .projects .card */ .overlay, .wrapper.projects figure img  {
-    transition: all .25s ease-in-out; 
+   transition: all .25s ease-in-out;  
 }
 
 .wrapper.projects .card {

@@ -32,8 +32,11 @@ const Hills = () => {
                             <li>MongoDB</li>
                             <li>Node.js</li>
                             <li>Express</li>
+                        </ul>
+                        <ul className='github'>
+                            <li><a href="https://github.com/iseneld/m8__e-commerce" target="_blank" rel="noreferrer noopener">Frontend on Github</a></li>
                             -
-                            <li><a>Project on Github</a></li>
+                            <li><a href="https://github.com/iwanast/m8_e-commerce-backend" target="_blank" rel="noreferrer noopener">Backend on Github</a></li>
                         </ul>
 
                         <div className='img_wrapper'>

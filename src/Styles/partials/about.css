@@ -196,8 +196,7 @@
     .svg-not_for_full {
         display: block;
         position: absolute;
-        left: 10rem;
-        top: 3rem;
+        left: 5.5rem;
         transform: rotate(18deg);
     }
 
@@ -205,19 +204,27 @@
         margin-top: 2rem;
     }
 
+    .about .description button {
+        font-size: 16px;
+    }
+
     .not_for_full .description {
         width: 100% !important;
         margin: 0 !important;
     }
+
+    p {
+        font-size: 14px;
+    }
 }
 
-@media screen and (max-width: 550px) {
+/* @media screen and (max-width: 550px) {
     .svg-not_for_full {
         bottom: -4rem;
     }
-} 
+}  */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .about {
         gap: 2rem;
     }
@@ -228,7 +235,11 @@
     }
 
     .not_for_full .img_field {
-        width: 180px;
-        height: 170px;
+        width: 150px;
+        height: 140px;
+    }
+
+    .not_for_full .img_field img {
+        min-height: 145px;
     }
 }

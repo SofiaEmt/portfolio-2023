@@ -9,7 +9,7 @@ const MyNav = ({onMenuItemClick}) => {
         }
     return (
         <nav>
-            <ul>
+            <ul className="main_nav">
                 <li className={activeMenuItem === 'work' ? 'active' : ''} onClick={() => handleMenuItemClick('work')}>
                     <div className="text_hover">
                         <span className="textwrapper_b">WORK</span>
@@ -34,9 +34,6 @@ const MyNav = ({onMenuItemClick}) => {
                     PROJECTS
                     </div>
                 </li>
-{/*                 <li><a href="#" class="cutlink" data-content="Hover me to cut">
-                <span class="cutlink-inner">Hover me to cut</span>
-                </a></li>  */}
             </ul>
         </nav>
     )

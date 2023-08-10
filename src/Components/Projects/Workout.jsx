@@ -21,7 +21,7 @@ const Workout = () => {
                             <li>HTML</li>
                             <li>SCSS</li>
                             -
-                            <li><a>Project on Github</a></li>
+                            <li><a href="https://github.com">Project on Github</a></li>
                         </ul>
 
                         <div className='img_wrapper'>

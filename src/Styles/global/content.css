@@ -3,6 +3,10 @@ button {
     cursor: pointer;
 }
 
+.flex {
+    display: flex;
+}
+
 
 .content {
     max-width: 1090px;
