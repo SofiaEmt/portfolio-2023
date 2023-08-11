@@ -3,7 +3,7 @@
     flex-direction: column;
     width: fit-content;
     padding: 3rem;
-    background: #141414;
+    background: var(--dark_grey);
     border-radius: 12px;
     box-shadow: var(--shadow-elevation-high);
 
@@ -14,7 +14,7 @@
     position: absolute;
     top: -1rem;
     right: 0;
-    background: #141414;
+    background: var(--dark_grey);
     box-shadow: none;
     color: var(--light);
     font-size: 2rem;
@@ -187,4 +187,61 @@ video {
     .popup {
         max-height: 100%;
     }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .popup-content {
+        position: fixed !important;
+        padding: 0 !important;
+        top: 0rem !important;
+        width: 100vw !important;
+        border-radius: none !important;
+        overflow: scroll;
+        height: fit-content !important;
+    }
+
+    .popup-overlay {
+        background-color: var(--dark_grey) !important;
+    }
+
+    .popup {
+        padding: 2rem 1.5rem;
+        max-height: none !important;
+        height: fit-content !important;
+        position: static;
+        height: 92vh !important;
+        overflow: scroll;
+
+    }
+
+    button.close {
+        top: 0.5rem;
+        right: 0.5rem;
+        font-size: 2.5rem;
+        border: none;
+    }
+
+    .popup .img_wrapper {
+        flex-direction: column;
+    }
+
+    .sudoku_vid {
+        max-width: 100% !important;
+    }
+
+    .chuck .img_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper.projects figure {
+        height: 100%;
+    }
+
+    .wrapper.projects figure img.workout {
+        height: 220%;
+    }
+
 }

@@ -13,18 +13,15 @@
 .projects .card {
     position: relative;
     border-radius: 2rem;
-    overflow: hidden;
-    background-color: var(--dark);
-
-    transition: all .25s ease-in-out;
+     overflow: hidden; 
+     background-color: var(--dark);
 }
 
 .projects .card:hover {
     cursor: pointer;
 }
 
-.overlay {
-    transition: all .2s ease-in-out;
+ .overlay {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -32,7 +29,8 @@
     top: 0;
     box-shadow: none;
     border-radius: 0;
-}
+    background: linear-gradient(0deg,rgba(10,8,18,.8) 18%,hsla(0,0%,89%,.02) 100%); 
+} 
 
 ul.tech {
     position: absolute;
@@ -107,18 +105,23 @@ ul.tech li {
     padding: 2rem;
 }
 
+h6, ul.tech li /* .projects .card */  {
+   transition: all .25s ease-in-out;   
+}
+
 .wrapper.projects .card {
     padding: 0;
+
 }
 
-.overlay {
-    background: linear-gradient(0deg,rgba(10,8,18,.8) 25%,hsla(0,0%,89%,.02) 60%);
-    background: linear-gradient(0deg,rgba(10,8,18,.8) 18%,hsla(0,0%,89%,.02) 100%);
+.card_desc {
+    opacity: 0;
 }
 
-.wrapper.projects .card.gradient:hover figure img {
+/* .wrapper.projects .card:hover figure img {
     transform: scale(1.1);
-}
+}   */
+
 
 .wrapper.projects .card.gradient:hover ul.tech {
     right: 1.5rem;
@@ -131,4 +134,74 @@ ul.tech li {
 
 .wrapper.projects .card.gradient:hover ul.tech li  {
     font-size: 14px;
+} 
+
+
+
+span.sudoku {
+    background-image: url("../../assets/sudoku_mindre.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: 100%;
 }
+
+span.hills {
+    background-image: url("../../assets/hills.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+span.workout {
+    background-image: url("../../assets/workout_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+span.chuck {
+    background-image: url("../../assets/chuck_mindre.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+span.hub {
+    background-image: url("../../assets/hubspot_mindre.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+span.boye {
+    background-image: url("../../assets/noah_test_boye.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+
+/* .sudoku, .hills, .workout, .chuck, .hub, .boye {
+    transition: transform .25s ease-in-out;
+}
+
+.projects .card:hover span.sudoku,
+.projects .card:hover span.hills,
+.projects .card:hover span.workout,
+.projects .card:hover span.chuck,
+.projects .card:hover span.hub,
+.projects .card:hover span.boye {
+    transform: scale(1.1);
+}  */
