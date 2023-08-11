@@ -408,8 +408,22 @@ nav li:nth-child(4).active {
     transition: .25s ease-in-out;
 }
 
+
+.mobileNav .mobileNav_btn {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
 main:has(.mobileNav.active) {
     overflow-y: hidden;
+/*     max-height: 80vh; */
+}
+
+@media screen and (min-width: 600px) {
+    .mobileNav.active {
+        display: none;
+    }
 }
 
 .mobileNav_btn span:nth-child(1) {

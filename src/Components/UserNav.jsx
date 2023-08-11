@@ -4,8 +4,6 @@ import { MdEmail, MdMarkEmailRead } from "react-icons/md";
 
 import { useState, useRef } from "react";
 
-import circle from '../assets/nav_circle.svg';
-
 const UserNav = () => {
 
     const [hoverText, setHoverText] = useState('Copy email');
@@ -47,7 +45,6 @@ const UserNav = () => {
 
 
         <button className={`mobileNav_btn ${showNav && 'open'}`}onClick={toggleNav}>
-{/*                 <img src={circle}></img> */}
                     <span></span>
                     <span></span>
                     <span></span>

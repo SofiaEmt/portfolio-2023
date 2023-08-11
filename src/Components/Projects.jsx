@@ -1,7 +1,3 @@
-import Popup from 'reactjs-popup';
-import sudokuMobile from '../assets/sudoku3.png'
-import sudokuPreview from '../assets/sudokumovie.mp4';
-import sudokuTablet from '../assets/tablet_sudoku.png'
 import Sudoku from './Projects/Sudoku';
 import Hills from './Projects/Hills';
 import Chuck from './Projects/Chuck';
@@ -20,27 +16,31 @@ import hubspotBg from '../assets/hubspot_mindre.png';
 import { gsap } from "gsap";
 
 import { useLayoutEffect, useRef } from 'react';
+import { useEffect } from 'react';
 
 const Projects = () => {
 
 /*     const projectCards = useRef(null); */
 
-    useLayoutEffect(() => {
-        let ctx = gsap.context(() => {
-            gsap.from(".card", {duration:.5, zoom:1.3, ease: "power1.out", opacity:0});
-        });
 
-        return () => ctx.revert();
-        
-    }, []); 
-
+        useLayoutEffect(() => {
+            let ctx = gsap.context(() => {
+                gsap.set(".card_desc", {opacity: 1})
+                gsap.from(".card_desc", {duration:1.5, zoom:1.4, ease: "expo.out", opacity:0, autoAlpha:0});
+            
+            });
     
+            return () => ctx.revert();
+            
+        }, []); 
 
     return(
         <section className="wrapper projects">
             <div className="card">
+
+                <span className='sudoku'></span>
                 <div className="overlay"></div>
-                 <figure><img src={sudokuBg} /></figure>
+{/*                  <figure><img src={sudokuBg} /></figure> */}
                 <Sudoku /> 
                 <article className="card_desc">
                     <h6>Sudoku Player</h6>
@@ -53,8 +53,9 @@ const Projects = () => {
             </div>
 
             <div className="card">
+                <span className="hills"></span>
                 <div className="overlay"></div>
-                <figure><img src={hillsBg} /></figure>
+{/*                 <figure><img src={hillsBg} /></figure> */}
                 <Hills /> 
                 <article className="card_desc">
                     <h6>The Hills</h6>
@@ -68,8 +69,9 @@ const Projects = () => {
                 </article>
             </div>
             <div className="card">
+                <span className="workout"></span>
                 <div className="overlay"></div>
-                <figure><img className="full workout" src={workoutBg} /></figure>
+               {/*  <figure><img className="full workout" src={workoutBg} /></figure> */}
                 <Workout /> 
                 <article className="card_desc">
                     <h6>Workout<br></br>Generator </h6>
@@ -81,8 +83,9 @@ const Projects = () => {
                 </article>
             </div>
             <div className="card">
+                <span className="chuck"></span>
                  <div className="overlay"></div>
-                <figure><img src={chuckBg} /></figure> 
+{/*                 <figure><img src={chuckBg} /></figure>  */}
                 <Chuck /> 
                 <article className="card_desc">
                     <h6>Good <br></br>Luck Chuck</h6>
@@ -93,8 +96,9 @@ const Projects = () => {
                 </article>
             </div>
             <div className="card">
+                <span className="hub"></span>
                 <div className="overlay"></div>
-                <figure><img className="full" src={hubspotBg} /></figure> 
+              {/*   <figure><img className="full" src={hubspotBg} /></figure>  */}
                 <Hubspot /> 
                 <article className="card_desc">
                     <h6>Full <br></br>Hubspot site</h6>
@@ -108,8 +112,9 @@ const Projects = () => {
                 </article>
             </div>
             <div className="card">
+                <span className="boye"></span>
                 <div className="overlay"></div>
-                <figure><img className="full" src={boyeBg} /></figure>
+{/*                 <figure><img className="full" src={boyeBg} /></figure> */}
                 <Boye /> 
                 <article className="card_desc">
                     <h6>Karin Boye <br></br>Poetry</h6>
