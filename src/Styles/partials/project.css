@@ -189,7 +189,7 @@ video {
     }
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
 
     .popup-content {
         top: 2rem !important;
@@ -201,7 +201,7 @@ video {
     }
 
 
-}
+} */
 
 @media screen and (max-width: 600px) {
     .popup-content {
@@ -223,6 +223,11 @@ video {
         overflow: scroll;
 
     }
+
+    .popup-overlay {
+        background: var(--dark_grey);
+    }
+
 
     button.close {
         top: 0.5rem;
