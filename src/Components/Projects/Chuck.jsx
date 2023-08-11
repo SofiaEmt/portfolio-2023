@@ -22,7 +22,7 @@ const Chuck = () => {
                             <li>Phaser 3</li>
                             -
                             <li>
-                                <a> Project on Github</a>
+                                <a href="https://github.com/BenCiantar/zombie-game-project" target="_blank" rel="noreferrer noopener">Project on Github</a>
                             </li>
                         </ul>
 

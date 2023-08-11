@@ -6,9 +6,9 @@ const Home = () => {
     return (
         <>
             <main>
-                 <img className="bg_one" src={bgOne}/> 
+{/*                  <img className="bg_one" src={bgOne}/>  */}
                 <Main />
-                 <img className="bg_two" src={bgTwo}/> 
+{/*                  <img className="bg_two" src={bgTwo}/>  */}
             </main>
         </>
     )

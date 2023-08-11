@@ -408,6 +408,7 @@ nav li:nth-child(4).active {
     transition: .25s ease-in-out;
 }
 
+
 .mobileNav .mobileNav_btn {
     position: sticky;
     top: 0;

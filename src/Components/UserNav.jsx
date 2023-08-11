@@ -8,6 +8,7 @@ const UserNav = () => {
 
     const [hoverText, setHoverText] = useState('Copy email');
     const [emailIcon, setEmailIcon] = useState(<MdEmail />);
+    const [showNav, setShowNav] = useState(false);
 
     function changeEmailIcon() {
         setEmailIcon(<MdMarkEmailRead/>);
@@ -22,6 +23,10 @@ const UserNav = () => {
 
     function copyToClipBoard() {
         navigator.clipboard.writeText('sofia.emteryd@gmail.com');
+    }
+
+    const toggleNav = () => {
+        setShowNav(!showNav);
     }
 
     return (

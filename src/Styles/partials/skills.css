@@ -36,3 +36,20 @@
     }
 
  }
+
+ @media screen and (max-width: 600px) {
+     .skills ul {
+        font-size: 22px !important;
+        row-gap: 0rem !important;
+        column-gap: .3rem;
+        justify-content: space-around;
+        text-align: start;
+    }
+ }
+
+ @media screen and (max-width: 500px) {
+    .skills {
+        padding-inline: 1rem;
+    }
+ }
+

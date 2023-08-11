@@ -19,6 +19,7 @@
     box-shadow: var(--shadow-elevation-medium);
 }
 
+
 .card span {
     border-bottom: 3px solid var(--blue);
 }
@@ -78,5 +79,14 @@
     .wrapper {
         display: flex;
         flex-direction: column;
+    }
+
+    .card {
+        font-size: 14px;
+    }
+
+    .card h3 {
+        font-size: 22px;
+        margin-bottom: 16px;
     }
 }

@@ -32,7 +32,7 @@ const Sudoku = () => {
                             <li>Sass</li>
                             <li>Javascript</li>
                             -
-                            <li><a>Project on Github</a></li>
+                            <li><a href="https://github.com/SofiaEmt/sudokuinspace" target="_blank" rel="noreferrer noopener">Project on Github</a></li>
                         </ul>
 
                         <div className='img_wrapper'>

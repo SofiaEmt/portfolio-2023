@@ -8,7 +8,8 @@
     --green: #00FF0A;
     --green_gradient: linear-gradient(180deg, #00FF0A 0%, #24AA29 100%);
     --red: #F00000;
-    --purple: #BD00FF;
+    --purple: #AD00FF; /* #BD00FF;  */
+    --dark_purple: #251F28; /* #2C1736; */
     --yellow: #FFF500;
 
     --radius: 12px;

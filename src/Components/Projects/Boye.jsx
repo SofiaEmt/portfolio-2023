@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Popup from 'reactjs-popup';
 
 import boyeOne from '../../assets/boye_2.png'; 
@@ -7,7 +8,7 @@ const Boye = () => {
     return (
         <Popup trigger={<button className='overlay'></button>} model nested>
                 {close => ( 
-                    <section className='popup chuck'>
+                    <section className='popup'>
                         <button className="close" onClick={close}>
                             &times;
                         </button>
@@ -17,17 +18,13 @@ const Boye = () => {
                             <li>Next.js</li>
                             <li>CSS</li>
                             <li>API</li>
-                            -
-                            <li>
-                                <a> Project on Github</a>
-                            </li>
                         </ul>
 
                         <div className='img_wrapper'>
-                                <figure className=''>
+                                <figure>
                                     <img src={boyeOne} />
                                 </figure>
-                                <figure className=''>
+                                <figure>
                                     <img src={boyeTwo} />
                                 </figure>
                         </div>

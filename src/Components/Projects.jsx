@@ -5,12 +5,13 @@ import Workout from './Projects/Workout';
 import Boye from './Projects/Boye';
 import Hubspot from './Projects/Hubspot';
 
-import sudokuBg from '../assets/sudoku1.png';
+import sudokuBg from '../assets/sudoku_mindre.png';
 import workoutBg from '../assets/workout_1.jpg';
-import chuckBg from '../assets/chuck_1.png';
-import hillsBg from '../assets/hills.jpeg';
-import boyeBg from '../assets/boye_1.png';
-import hubspotBg from '../assets/hubspot_1.png';
+import chuckBg from '../assets/chuck_mindre.png';
+import hillsBg from '../assets/hills.jpg';
+/* import boyeBg from '../assets/boye_1.jpg'; */
+import boyeBg from '../assets/noah_test_boye.png';
+import hubspotBg from '../assets/hubspot_mindre.png';
 
 import { gsap } from "gsap";
 
@@ -19,7 +20,8 @@ import { useEffect } from 'react';
 
 const Projects = () => {
 
-    const projectCards = useRef();
+/*     const projectCards = useRef(null); */
+
 
         useLayoutEffect(() => {
             let ctx = gsap.context(() => {
@@ -35,6 +37,7 @@ const Projects = () => {
     return(
         <section className="wrapper projects">
             <div className="card">
+
                 <span className='sudoku'></span>
                 <div className="overlay"></div>
 {/*                  <figure><img src={sudokuBg} /></figure> */}
