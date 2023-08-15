@@ -218,22 +218,6 @@ a:hover::before {
 
 }
 
-.blue_blob {
-  position: absolute;
-  top: 15%;
-  left: -1rem;
-  transform: skew(-10deg, -3deg);
-}
-
-.blue_blob--2 {
-  position: absolute;
-  top: -5rem;
-  right: 5rem;
-  transform: skew(-10deg, -3deg) rotate(-120deg);
-
-  z-index: -1;
-}
-
 .skills {
 /*   position: absolute; */
 /*   display: flex;

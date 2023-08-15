@@ -1,5 +1,3 @@
-import me from '../assets/profile.jpg'
-import profile from '../assets/me.svg'
 import blob from '../assets/blob.svg'
 
 const Hero = () => {

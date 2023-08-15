@@ -1,8 +1,3 @@
-import me from '../assets/profile.jpg'
-import profile from '../assets/me.svg'
-import blob from '../assets/blob.svg'
-import blueBlob from '../assets/blue_blob.svg'
-
 import { gsap } from "gsap";
 import { useLayoutEffect, useRef } from 'react';
 
@@ -16,8 +11,8 @@ const Skills = () => {
         let ctx = gsap.context(() => {
 /*             gsap.from(".skill_item", {duration: 1, opacity: 0, ease:"expo.out", y:"-50", stagger: .05}); */
 /*             gsap.from(".skill_item", {duration: .3, opacity: 0, ease:"power1.out", x:"-100", stagger: .03}); */
-            gsap.from(".right", {duration: .3, opacity: 0, ease:"power1.out", x:-100, stagger:0.05});
-            gsap.from(".left", {duration: .3, opacity: 0, ease:"power1.out", x:100, stagger:0.05});
+            gsap.from(".right", {duration: .7, opacity: 0, ease:"expo.out", x:-100, stagger:0.05});
+            gsap.from(".left", {duration: .7, opacity: 0, ease:"expo.out", x:100, stagger:0.05});
         }, allSkills);
 
         return () => ctx.revert();

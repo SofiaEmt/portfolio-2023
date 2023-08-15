@@ -5,23 +5,11 @@ import Workout from './Projects/Workout';
 import Boye from './Projects/Boye';
 import Hubspot from './Projects/Hubspot';
 
-import sudokuBg from '../assets/sudoku_mindre.png';
-import workoutBg from '../assets/workout_1.jpg';
-import chuckBg from '../assets/chuck_mindre.png';
-import hillsBg from '../assets/hills.jpg';
-/* import boyeBg from '../assets/boye_1.jpg'; */
-import boyeBg from '../assets/noah_test_boye.png';
-import hubspotBg from '../assets/hubspot_mindre.png';
-
 import { gsap } from "gsap";
 
-import { useLayoutEffect, useRef } from 'react';
-import { useEffect } from 'react';
+import { useLayoutEffect } from 'react';
 
 const Projects = () => {
-
-/*     const projectCards = useRef(null); */
-
 
         useLayoutEffect(() => {
             let ctx = gsap.context(() => {
@@ -40,7 +28,6 @@ const Projects = () => {
 
                 <span className='sudoku'></span>
                 <div className="overlay"></div>
-{/*                  <figure><img src={sudokuBg} /></figure> */}
                 <Sudoku /> 
                 <article className="card_desc">
                     <h6>Sudoku Player</h6>
@@ -55,7 +42,6 @@ const Projects = () => {
             <div className="card">
                 <span className="hills"></span>
                 <div className="overlay"></div>
-{/*                 <figure><img src={hillsBg} /></figure> */}
                 <Hills /> 
                 <article className="card_desc">
                     <h6>The Hills</h6>
@@ -71,7 +57,6 @@ const Projects = () => {
             <div className="card">
                 <span className="workout"></span>
                 <div className="overlay"></div>
-               {/*  <figure><img className="full workout" src={workoutBg} /></figure> */}
                 <Workout /> 
                 <article className="card_desc">
                     <h6>Workout<br></br>Generator </h6>
@@ -85,7 +70,6 @@ const Projects = () => {
             <div className="card">
                 <span className="chuck"></span>
                  <div className="overlay"></div>
-{/*                 <figure><img src={chuckBg} /></figure>  */}
                 <Chuck /> 
                 <article className="card_desc">
                     <h6>Good <br></br>Luck Chuck</h6>
@@ -98,7 +82,6 @@ const Projects = () => {
             <div className="card">
                 <span className="hub"></span>
                 <div className="overlay"></div>
-              {/*   <figure><img className="full" src={hubspotBg} /></figure>  */}
                 <Hubspot /> 
                 <article className="card_desc">
                     <h6>Full <br></br>Hubspot site</h6>
@@ -114,7 +97,6 @@ const Projects = () => {
             <div className="card">
                 <span className="boye"></span>
                 <div className="overlay"></div>
-{/*                 <figure><img className="full" src={boyeBg} /></figure> */}
                 <Boye /> 
                 <article className="card_desc">
                     <h6>Karin Boye <br></br>Poetry</h6>
