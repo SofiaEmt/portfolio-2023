@@ -7,7 +7,6 @@ import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import UserNav from "./UserNav";
-import Hero from "./Hero";
 
 function Main() {
     const [activeComponent, setActiveComponent] = useState('work');
