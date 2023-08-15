@@ -17,6 +17,7 @@ const Sudoku = () => {
         attemptPlay();
     }, []);
 
+
     return (
         <Popup trigger={<button className='overlay'></button>} model nested>
                 {close => ( 
