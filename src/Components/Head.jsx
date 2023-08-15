@@ -1,6 +1,4 @@
 import hello from '../assets/hello_banner.svg';
-import circle from '../assets/circle.svg'
-import anime from 'animejs';
 
 const Head = () => {
     return (

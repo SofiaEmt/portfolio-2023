@@ -1,8 +1,5 @@
 import { Link } from 'react-router-dom';
 
-import sun from '../assets/sun.svg'
-import yarn from '../assets/yarn.svg'
-import arrow from '../assets/arrow_down.svg'
 
 const Heading = () => {
     return (

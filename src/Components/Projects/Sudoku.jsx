@@ -1,7 +1,6 @@
 import Popup from 'reactjs-popup';
 import sudokuMobile from '../../assets/sudoku3.png'
 import sudokuPreview from '../../assets/sudokumovie.mp4';
-import sudokuTablet from '../../assets/tablet_sudoku.png'
 import { useEffect, useRef } from 'react';
 
 const Sudoku = () => {
