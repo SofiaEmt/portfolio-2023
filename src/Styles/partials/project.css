@@ -217,6 +217,7 @@ video {
         right: 0.5rem;
         font-size: 2.5rem;
         border: none;
+        padding: 0.25rem 1rem;
     }
 
     .popup .img_wrapper {
