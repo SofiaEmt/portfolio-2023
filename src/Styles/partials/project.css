@@ -96,6 +96,10 @@
     margin-top: 2rem;
 }
 
+.img_wrapper.workout figure {
+    border: 1px solid var(--dark);
+}
+
 .img_wrapper .images {
     display: flex;
 }

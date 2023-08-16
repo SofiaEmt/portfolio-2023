@@ -4,8 +4,6 @@ import wgOne from '../../assets/wg_1.jpg';
 import wgTwo from '../../assets/wg_2.jpg';
 import wgThree from '../../assets/wg_3.png';
 
-import { useEffect, useRef } from 'react';
-
 const Workout = () => {
     return (
         <Popup trigger={<button className='overlay'></button>} model nested>
@@ -24,11 +22,11 @@ const Workout = () => {
                             <li><a href="https://github.com">Project on Github</a></li>
                         </ul>
 
-                        <div className='img_wrapper'>
+                        <div className='img_wrapper workout'>
                                 <figure className='wgOne'>
                                     <img src={wgOne} />
                                 </figure>
-                                <div className='flex'>
+                                <div className=''>
                                     <figure className=''>
                                         <img src={wgTwo} />
                                     </figure>
