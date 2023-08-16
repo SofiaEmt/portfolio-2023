@@ -50,7 +50,7 @@ const Work = () => {
                 <figure>
                     <img src={email} alt="Email me!"/>
                 </figure>
-                <p className='email'>sofia.emteryd@gmail.com</p>
+                <p><a href="mailto:sofia.emteryd@gmail.com" className='email'>sofia.emteryd@gmail.com</a></p>
             </div>
         </section>
         </>
