@@ -3,7 +3,7 @@ import './Styles/style.css'
 import { Route, Routes } from 'react-router-dom';
 import 'reactjs-popup/dist/index.css';
 
-import Home from './Pages/home';
+import Home from './Pages/Home';
 
 import('./assets/fonts/PPNeueMontreal-Bold.woff');
 import('./assets/fonts/PPNeueMontreal-Book.woff');
