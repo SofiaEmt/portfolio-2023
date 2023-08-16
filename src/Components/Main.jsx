@@ -1,4 +1,3 @@
-
 import Head from "./Head";
 import Work from "./Work";
 import MyNav from './Navigation';

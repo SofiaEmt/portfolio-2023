@@ -153,9 +153,6 @@ video {
     .wrapper.projects {
 /*         grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));  */
         grid-template-columns: repeat(2, minmax(0, 1fr)); 
-/*         grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-template-columns: repeat(3, minmax(0, 1fr)); */
-       
     }
 
     .wrapper.projects .card {
@@ -188,20 +185,6 @@ video {
         grid-template-columns: repeat(1, minmax(0, 1fr)); 
     }
 }
-
-/* @media screen and (max-width: 600px) {
-
-    .popup-content {
-        top: 2rem !important;
-        width: 90vw !important;
-    }
-
-    .popup {
-        max-height: 100%;
-    }
-
-
-} */
 
 @media screen and (max-width: 600px) {
     .popup-content {

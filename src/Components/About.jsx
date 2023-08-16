@@ -1,7 +1,6 @@
 import me from '../assets/me.jpg'
 import { Link } from 'react-router-dom';
 
-
 import { gsap } from "gsap";
 import { useLayoutEffect, useRef } from 'react';
 
@@ -17,7 +16,6 @@ const About = () => {
             gsap.from(profile.current, {duration: 1, opacity: 0, ease:"power3.out",  x:"random(-50, 50)"});
             gsap.from(profileImg.current, {duration: 1.5, opacity: 0, ease:"power3.out",  x:"random(-50, 50)"});
             gsap.from(download.current, {duration: 1, opacity: 0, ease:"expo.out",  y:"-50"})
-/*             gsap.from(profileImg.current, {duration: 2, ease:"bounce.out", x:"-50"}) */
             gsap.from(".fact_item", {duration: 1, opacity: 0, ease:"expo.out",  x:"-100", stagger: .07})
         }, parent);
 

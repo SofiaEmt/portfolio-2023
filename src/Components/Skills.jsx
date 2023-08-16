@@ -9,8 +9,6 @@ const Skills = () => {
 
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
-/*             gsap.from(".skill_item", {duration: 1, opacity: 0, ease:"expo.out", y:"-50", stagger: .05}); */
-/*             gsap.from(".skill_item", {duration: .3, opacity: 0, ease:"power1.out", x:"-100", stagger: .03}); */
             gsap.from(".right", {duration: .7, opacity: 0, ease:"expo.out", x:-100, stagger:0.05});
             gsap.from(".left", {duration: .7, opacity: 0, ease:"expo.out", x:100, stagger:0.05});
         }, allSkills);
