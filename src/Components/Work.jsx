@@ -11,8 +11,6 @@ const Work = () => {
         let ctx = gsap.context(() => {
             gsap.from(".one", {duration: 1.5, opacity: 0, ease:"expo.out",  x:-30, stagger: .05});   
             gsap.from(".two", {duration: 1.5, opacity: 0, ease:"expo.out",  x:30, stagger: .05})    
-
-/*             gsap.from(".card", {duration: 2.5, opacity: 0, ease:"expo.out",  x:-50, stagger: .05});  */
         }, Cards);
 
         return () => ctx.revert();

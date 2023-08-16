@@ -8,8 +8,6 @@ const Head = () => {
                 <img className="img" src={hello} target="_blank" />
             </figure> 
             <p className='desc'>A <strong>frontend developer</strong> led into this field by the urge of living freely and doing inspiring work</p>
-
-           
         </section>
         </>
     )

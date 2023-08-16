@@ -3,7 +3,6 @@
     /*  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));	     */
     grid-template-columns: repeat(3, minmax(0, 1fr)); 
     gap: 25px;
-/*     height: 100%; */
 }
 
 .wrapper.projects button {
@@ -91,21 +90,11 @@ ul.tech li {
 }
 
 .wrapper.projects .card .card_desc {
-/*     align-items: flex-start;
-    bottom: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    left: 5%;
-    position: absolute;
-    transition: all .4s;
-    width: 100%; */
-
     padding: 2rem;
 }
 
 
-h6, ul.tech li /* .projects .card */  {
+h6, ul.tech li {
    transition: all .25s ease-in-out;   
 }
 
@@ -117,11 +106,6 @@ h6, ul.tech li /* .projects .card */  {
 .card_desc {
     opacity: 0;
 }
-
-/* .wrapper.projects .card:hover figure img {
-    transform: scale(1.1);
-}   */
-
 
 .wrapper.projects .card:hover ul.tech {
     right: 1.5rem;
@@ -135,8 +119,6 @@ h6, ul.tech li /* .projects .card */  {
 .wrapper.projects .card:hover ul.tech li  {
     font-size: 14px;
 } 
-
-
 
 span.sudoku {
     background-image: url("../../assets/sudoku_mindre.png");
@@ -191,17 +173,3 @@ span.boye {
     display: block;
     height: 100%;
 }
-
-
-/* .sudoku, .hills, .workout, .chuck, .hub, .boye {
-    transition: transform .25s ease-in-out;
-}
-
-.projects .card:hover span.sudoku,
-.projects .card:hover span.hills,
-.projects .card:hover span.workout,
-.projects .card:hover span.chuck,
-.projects .card:hover span.hub,
-.projects .card:hover span.boye {
-    transform: scale(1.1);
-}  */
