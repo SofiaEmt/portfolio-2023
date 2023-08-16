@@ -208,7 +208,7 @@ video {
     }
 
     .popup-overlay {
-        background: var(--dark_grey);
+        background: var(--dark_grey) !important;
     }
 
 
