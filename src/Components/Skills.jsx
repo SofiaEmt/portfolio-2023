@@ -38,8 +38,10 @@ const Skills = () => {
                 <li className='skill_item right'>Figma</li>
                 <li className='skill_item right'>UX & UI</li>
                 <li className='skill_item left'>Agile development methods</li>
+                <li className="skill_item left">GIT</li>
                 <li className='skill_item right'>Scrum master experience</li>
                 <li className='skill_item left'>Communication & concept development</li>
+                <li className="skill_item right">NPM</li>
                 <li className='skill_item right'>SEO & SEM</li>
                 <li className='skill_item left'>Content marketing</li>
                 <li className='skill_item right'>Conversion tracking</li>
