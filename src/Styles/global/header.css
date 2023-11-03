@@ -21,8 +21,10 @@
 .desc {
     width: 45%;  
     position: absolute;
-    bottom: -4.5rem;
-    left: 8rem;
+/*     bottom: -4.5rem;
+    left: 8rem; */
+    bottom: -6.2rem;
+    left: 7.7rem;
     background-color: transparent;
 }
 
